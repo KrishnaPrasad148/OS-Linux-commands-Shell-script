@@ -52,7 +52,7 @@ cat < file2
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
-![alt text](<expt01 -2-1.png>)
+![alt text](<expt02 (1).png>)
  
 comm file1 file2
  ## OUTPUT
@@ -61,8 +61,7 @@ comm file1 file2
  
 diff file1 file2
 ## OUTPUT
-![alt text](<expt02 -2-1.png>)
-
+![alt text](<expt02 -3-1.png>)
 
 #Filters
 
@@ -167,7 +166,7 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-![alt text](<expt05 (1).png>)
+![alt text](<expt05 (1)-1.png>)
 
 
 egrep -w '(H|h)ello' newfile 
@@ -243,75 +242,75 @@ sed -n -e '3p' file23
 
 sed -n -e '$p' file23
 ## OUTPUT
-
+![alt text](<expt06 -2.png>)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
-
+![alt text](<expt06 -3.png>)
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-
+![alt text](<expt06 -4.png>)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-
+![alt text](<expt06 -5.png>)
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-
+![alt text](<expt06 -6.png>)
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
-
+![alt text](<expt06 -7.png>)
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
-
+![alt text](<expt06 -8.png>)
 
 
 seq 10 
 ## OUTPUT
-
+![alt text](<expt06 -9.png>)
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
-
+![alt text](<expt06 -10.png>)
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
-
+![alt text](<expt06 -11.png>)
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
-
+![alt text](<expt06 -12.png>)
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-
+![alt text](<expt06 -13.png>)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-
+![alt text](<expt06 -14.png>)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
-
+![alt text](<expt06 -15.png>)
 
 
 sed -n '2,4{s/$/*/;p}' file23
-
+![alt text](<expt06 -16.png>)
 
 #Sorting File content
 cat > file21
@@ -324,7 +323,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-
+![alt text](<expt07 .png>)
 
 cat > file22
 ```
@@ -337,14 +336,14 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-
+![alt text](<expt07 -2.png>)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-
+![alt text](<expt07 -3.png>)
 cat < urllist.txt
 ```
 www. yahoo. com
@@ -360,18 +359,18 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-
+![alt text](expt08.png)
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-
+![alt text](<expt08 -2.png>)
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-
+![alt text](<expt08 -3 b.png>)
 
 mkdir backupdir
  
@@ -379,19 +378,19 @@ mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-
+![alt text](<expt08 -5 b.png>)
 
 tar -xvf backup.tar
 ## OUTPUT
-
+![alt text](<expt08 -3 b-1.png>)
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+ ![alt text](<expt08 -5 b-1.png>)
 gunzip backup.tar.gz
 ## OUTPUT
-
+![alt text](<expt08 -5 b-2.png>)
  
 # Shell Script
 ```
@@ -401,7 +400,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-
+![alt text](<expt09 ss.png>)
  
 cat << stop > herecheck.txt
 ```
@@ -413,7 +412,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-
+![alt text](<expt09 -2.png>)
 
 cat < scriptest.sh 
 ```bash
@@ -451,24 +450,25 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-
+![alt text](<expt09 -3.png>)
  
 ls file1
 ## OUTPUT
-
+![alt text](<expt09 -4.png>)
 echo $?
 ## OUTPUT 
+![alt text](<expt09 -5.png>)
 ./one
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- 
+ ![alt text](<expt09 -6.png>)
 abcd
  
 echo $?
  ## OUTPUT
-
+![alt text](<expt09 -7.png>)
 
  
 # mis-using string comparisons
@@ -500,14 +500,14 @@ echo "$val1 is less than $val2"
 fi
 ```
 ##OUTPUT
-
+![alt text](expt10.png)
 
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-
+![alt text](<expt10 -2.png>)
 
 # check file ownership
 cat < psswdperm.sh 
@@ -534,7 +534,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-
+![alt text](<expt10 -2-1.png>)
 # check if with file location
 cat>ifnested.sh 
 ```bash
