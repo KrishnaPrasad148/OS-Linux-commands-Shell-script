@@ -47,18 +47,21 @@ cat < file1
 
 cat < file2
 ## OUTPUT
-
+![alt text](<expt01 -2.png>)
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
+![alt text](<expt01 -2-1.png>)
  
 comm file1 file2
  ## OUTPUT
+ ![alt text](<expt02 -2.png>)
 
  
 diff file1 file2
 ## OUTPUT
+![alt text](<expt02 -2-1.png>)
 
 
 #Filters
@@ -82,17 +85,18 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-
+![alt text](expt03.png)
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-
+![alt text](<expt03 -2.png>)
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
+![alt text](<expt03 -3.png>)
 
 
 cat < newfile 
@@ -107,40 +111,40 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
+![alt text](<expt04 .png>)
 
 
 
 grep hello newfile 
 ## OUTPUT
-
-
+![alt text](<expt04 -2 (1).png>)
 
 
 grep -v hello newfile 
 ## OUTPUT
-
+![alt text](<expt04 -2.png>)
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-
+![alt text](<expt04 -3.png>)
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-
+![alt text](<expt04 -5.png>)
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
-
+![alt text](<expt04 -6.png>)
 
 
 grep -w -n world newfile   
 ## OUTPUT
-
+![alt text](<expt04 -7.png>)
 
 cat < newfile 
 ```
@@ -163,60 +167,60 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-
+![alt text](<expt05 (1).png>)
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
-
+![alt text](<expt05 -2 (1).png>)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
-
+![alt text](<expt05 -3.png>)
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
-
+![alt text](<expt05 -4.png>)
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
-
+![alt text](<expt05 -5.png>)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
-
+![alt text](<expt05 -6.png>)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
-
+![alt text](<expt05 -7.png>)
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
-
+![alt text](<expt05 -8.png>)
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
-
+![alt text](<expt05 -9.png>)
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
-
+![alt text](<expt05 -10.png>)
 
 egrep l{2} newfile
 ## OUTPUT
-
+![alt text](<expt05 -11.png>)
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
-
+![alt text](<expt05 -12.png>)
 
 cat > file23
 ```
@@ -234,7 +238,7 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-
+![alt text](expt06.png)
 
 
 sed -n -e '$p' file23
