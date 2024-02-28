@@ -534,7 +534,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-![alt text](<expt10 -2-1.png>)
+![alt text](expt11.png)
 # check if with file location
 cat>ifnested.sh 
 ```bash
@@ -580,7 +580,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
-
+![alt text](expt12.png)
 
 
 # using numeric test comparisons
@@ -624,6 +624,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+![alt text](expt13.png)
 
 # check if a file
 cat > ifnested.sh 
@@ -673,6 +674,7 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
+![alt text](expt14.png)
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -701,7 +703,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-
+![alt text](expt15.png)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -717,7 +719,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-
+![alt text](expt16.png)
 # using the case command
 cat >casecheck.sh 
 ```bash
@@ -736,6 +738,7 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
+![alt text](expt17.png)
  
 cat > whiletest
 ```bash
@@ -751,7 +754,7 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
- 
+ ![alt text](expt18.png)
  
 cat untiltest.sh 
 ```bash
@@ -849,7 +852,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
-
+![alt text](expt19.png)
 
 cat forctype.sh 
 ```bash
@@ -876,6 +879,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+![alt text](expt21.png)
 
 cat fornested1.sh 
 ```bash
@@ -894,7 +898,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-
+![alt text](expt22.png)
  
 cat forbreak.sh 
 ```bash
@@ -915,7 +919,8 @@ echo "The for loop is completed“
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
- 
+ ![alt text](expt23.png)
+
 cat forbreak.sh 
 ```bash
 #!/bin/bash
@@ -936,7 +941,7 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+ ![alt text](expt24.png)
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -950,7 +955,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-
+![alt text](expt25.png)
 
  cat exread1.sh
 ```bash
@@ -962,7 +967,7 @@ echo "Hello $name, welcome to my program. “
 $ chmod 755 exread1.sh 
 
 ## OUTPUT
-
+![alt text](expt26.png)
 
 
 $ ./exread1.sh 
@@ -984,10 +989,10 @@ fi
 ```
 ## OUTPUT
  ./funcex.sh 
-
+![alt text](<expt27 -1.png>)
  
  ./funcex.sh 1 2
-
+![alt text](<expt27 -2.png>)
  
 cat argshift.sh
 ```bash
@@ -1001,6 +1006,7 @@ $ chmod 777 argshift.sh
 
 ## OUTPUT
 $ ./argshift.sh 1 2 3
+![alt text](expt28-1.png)
  
  cat argshift1.sh
 ```bash
@@ -1018,6 +1024,7 @@ done
 $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
+![alt text](expt29.png)
  
 cat argshift.sh
 ```bash
@@ -1031,6 +1038,7 @@ set +x
 ```
 ## OUTPUT
  ./argshift.sh 1 2 3
+ ![alt text](expt30.png)
  
  
 cat > nc.awk
@@ -1062,6 +1070,7 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
+![alt text](expt31.png)
  
 cat > palindrome.sh
 ```bash
@@ -1089,6 +1098,7 @@ else
 fi
 ```
 ## OUTPUT 
+![alt text](expt32.png)
 
 
 # RESULT:
