@@ -42,7 +42,7 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-
+<img src = "C:\Users\admin\Downloads\expt01.png">
 
 
 cat < file2
